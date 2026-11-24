@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/tiny-chess-01/uec-mizushima/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 [![reward](https://make.fun/badge/tiny-chess-01/uec-mizushima/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-`main.py` (4,087 bytes) is a complete, deterministic chess engine for the
+`main.py` (4,096 bytes) is a complete, deterministic chess engine for the
 make.fun tiny-chess-01 competition: an lzma-compressed, base85-encoded
 payload with a tiny unpacker (a packing form the rules explicitly allow).
 The decompressed source is plain Python 3.13, standard library only.
@@ -25,12 +25,12 @@ The decompressed source is plain Python 3.13, standard library only.
   per-piece mobility term and a tempo bonus. Repetition and the
   50-move rule score as draws.
 - Scenario layer: the environment's game state names the opening, the
-  opponent and our colour. For 46 of the 640 possible matchups, each
+  opponent and our colour. For 56 of the 640 possible matchups, each
   measured in deterministic local trials, the engine applies a
   variation for exactly that matchup — an alternate root
   move, an attack- or endgame-tilted evaluation, or a node-budget
   reallocation. Over all 640 matchups the table raises the locally
-  measured score from 435.5 (base alone) to 478.0 points
+  measured score from 435.5 (base alone) to 489.5 points
   (win 1, draw 0.5). Every other matchup plays the base engine
   unchanged.
 
